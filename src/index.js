@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import {} from 'jquery-ujs'
+// import jquery from 'jquery';
+// window.$ = window.jQuery = jquery;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

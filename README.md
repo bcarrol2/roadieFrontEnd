@@ -1,4 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to take the high Roadie!
+
+First open the roadie_api
+    # Run bundle install
+    # rails s
+
+    ##### Make sure the db is created and migrated and that the rails server is running on port:3000
+
+Then open the roadie repository
+    # yarn or npm install
+    # npm start
+
+    ##### When prompted hit `y` to run on port:3001
+    visit http://localhost:3001/reviews to see the reviews page
+
+
+Enjoy
+
+
+
+
+
+
+
+
+
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -65,4 +92,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
