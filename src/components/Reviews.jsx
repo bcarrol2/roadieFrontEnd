@@ -14,7 +14,7 @@ export default class Reviews extends React.Component {
             cart: 0,
             showPopup: false
         }
-        
+
         this.getData = this.getData.bind(this)
         this.rating5 = this.rating5.bind(this)
         this.rating4 = this.rating4.bind(this)
@@ -35,7 +35,7 @@ export default class Reviews extends React.Component {
              if (response.ok) {
                 return response.json();
              }
-             throw new Error("Network response was not ok.");
+             throw new Error("There was an error getting the data");
            })
           .then(response => this.setState({ reviews: response }))
           .catch(() => this.props.history.push("/reviews"));
