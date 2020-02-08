@@ -98,6 +98,7 @@ export default class Reviews extends React.Component {
 
     render(){
         const { reviews, reviews_feed } = this.state;
+        console.log(reviews_feed, 'truncked')
 
         let allReviews = reviews_feed.map((review, index) => (
             <div key={index} id="separateReviewBox">
@@ -116,7 +117,7 @@ export default class Reviews extends React.Component {
               />
             </div>
               <br/>
-                <p style={{ color: 'grey', fontSize: 'smaller' }}>{review.name} on {review.created_at}</p>
+                <p style={{ color: 'grey', fontSize: 'smaller' }}>{review.name} on {review.created_at.slice(0, 10)}</p>
                 <p>{review.review_text}</p>
             </div>
         ));
@@ -199,11 +200,11 @@ export default class Reviews extends React.Component {
                                 calc: 'stringify',
                             },
                         ],
-                            ['5 star', reviews.rev5, '#D4AF37', null],
-                            ['4 star', reviews.rev4, '#D4AF37', null],
-                            ['3 star', reviews.rev3, '#D4AF37', null],
-                            ['2 star', reviews.rev2, '#D4AF37', null],
-                            ['1 star', reviews.rev1, '#D4AF37', null],
+                            ['5 star', reviews.rated5_count, '#D4AF37', null],
+                            ['4 star', reviews.rated4_count, '#D4AF37', null],
+                            ['3 star', reviews.rated3_count, '#D4AF37', null],
+                            ['2 star', reviews.rated2_count, '#D4AF37', null],
+                            ['1 star', reviews.rated1_count, '#D4AF37', null],
                     ]}
                     options={{
                             title: `${reviews.counted_reviews} reviews`,
