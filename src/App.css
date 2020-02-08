@@ -8,7 +8,7 @@ body {
 }
 
 .landing {
-  background-image: url('./images/Roadie-Web.jpg');
+  /* background-image: url('./images/Roadie-Web.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
