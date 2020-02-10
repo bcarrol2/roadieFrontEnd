@@ -8,7 +8,7 @@ First open the roadie_api
 
 Then open the roadie repository
     # yarn or npm install
-    # npm start
+    # yarn start of npm start
 
     ##### When prompted hit `y` to run on port:3001
     visit http://localhost:3001/reviews to see the reviews page

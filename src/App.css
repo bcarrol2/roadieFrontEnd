@@ -7,10 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.landing {
-  /* background-image: url('./images/Roadie-Web.jpg'); */
-  background-repeat: no-repeat;
-  background-size: cover;
+#review-link {
+  background-color: salmon;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#review-link:hover, #review-link:active {
+  background-color: purple;
 }
 
 .navbar a {
@@ -31,6 +38,15 @@ body {
 .navbar a.inactive {
   pointer-events: none;
   cursor: default;
+}
+
+.centered {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
 }
 
 .moving {
@@ -106,15 +122,6 @@ body {
   background-color: #efefef;
   text-align: center;
   height: 35px;
-}
-
-.centered {
-  width: 75%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #018888;
 }
 
 .reviews {

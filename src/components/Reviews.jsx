@@ -2,7 +2,7 @@ import React from 'react';
 import Popup from './Popup';
 import { Chart } from "react-google-charts";
 import StarRatings from 'react-star-ratings';
-import roadieLogo from '../images/Software-Box-Mock-Up.jpg';
+import roadieLogo from '../img/Software-Box-Mock-Up.jpg';
 
 export default class Reviews extends React.Component {
     constructor(props){
